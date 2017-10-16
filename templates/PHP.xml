@@ -1,0 +1,21 @@
+<templateSet group="PHP">
+  <template name="testclass" value="&lt;?php&#10;&#10;namespace Tests\Feature;&#10;&#10;use Tests\TestCase;&#10;use Illuminate\Foundation\Testing\DatabaseMigrations;&#10;&#10;class $CLASS$ extends TestCase&#10;{&#10;&#10;    use DatabaseMigrations;&#10;&#10;    /** @test */&#10;    public function it_$METHOD$()&#10;    {&#10;        $END$&#10;    }&#10;}&#10;" description="A test class" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="testfunc" value="/** @test */&#10;public function $FUNC$()&#10;{&#10;    $END$&#10;}" description="A test function" toReformat="false" toShortenFQNames="true">
+    <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="func" value="public function $NAME$()&#10;{&#10;    $END$&#10;}" description="Simple public function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,41 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="InspectionProjectProfileManager">
+        <option name="PROJECT_PROFILE" />
+        <version value="1.0" />
+      </component>
+      <component name="JavaScriptLibraryMappings">
+        <includedPredefinedLibrary name="Node.js Core" />
+      </component>
+      <component name="JavaScriptSettings">
+        <option name="languageLevel" value="ES6" />
+      </component>
+      <component name="JsFlowSettings">
+        <service-enabled>true</service-enabled>
+        <exe-path />
+        <annotation-enable>false</annotation-enable>
+        <other-services-enabled>true</other-services-enabled>
+        <auto-save>true</auto-save>
+      </component>
+      <component name="PhpIncludePathManager">
+        <include_path>
+          <path value="C:\xampp\php\PEAR" />
+        </include_path>
+      </component>
+      <component name="PhpProjectSharedConfiguration" php_language_level="7" />
+      <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php">
+        <include_path>
+          <path value="C:\xampp\php\PEAR" />
+        </include_path>
+      </component>
+      <component name="PropertiesComponent">
+        <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+        <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+        <property name="javascript.nodejs.core.library.configured.version" value="7.2.1" />
+        <property name="JavaScriptPreferStrict" value="false" />
+        <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+      </component>
+    </defaultProject>
+  </component>
+</application>
