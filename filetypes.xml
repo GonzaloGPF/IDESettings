@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="test" type="JavaScript" />
       <mapping ext="mwb" type="Native" />
       <mapping ext="sqlite" type="PLAIN_TEXT" />
     </extensionMap>
