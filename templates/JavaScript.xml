@@ -1,20 +1,8 @@
 <templateSet group="JavaScript">
-  <template name="cl" value="console.log($END$);" description="Console.log shortcurt" toReformat="false" toShortenFQNames="true">
+  <template name="cl" value="console.log($END$);" description="Console.log shortcut" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="testjs" value="import { mount } from 'vue-test-utils';&#10;import expect from 'expect';&#10;import $NAME$ from '../src/components/$NAME$.vue'&#10;&#10;describe('$NAME$', () =&gt; {&#10;    let wrapper;&#10;&#10;    beforeEach(() =&gt; {&#10;        wrapper = mount($NAME$);&#10;    });&#10;    &#10;    it('$END$', () =&gt; {&#10;&#10;    });&#10;});&#10;" description="A testing boiler plate for js" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="it" value="it('$NAME$', () =&gt; {&#10;    $END$&#10;});" description="javascript testing function" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
 </templateSet>
