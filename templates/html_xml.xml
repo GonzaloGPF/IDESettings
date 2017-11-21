@@ -4,7 +4,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="icon" value="&lt;i class=&quot;material-icons&quot;&gt;$END$&lt;/i&gt;" description="Icon tag with material class" toReformat="false" toShortenFQNames="true">
+  <template name="icon" value="&lt;i class=&quot;fa fa-$END$&quot;&gt;&lt;/i&gt;" description="Icon tag with material class" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
