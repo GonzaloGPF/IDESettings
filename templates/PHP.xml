@@ -12,4 +12,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="weh" value="$this-&gt;withoutExceptionHandling();" description="Without Exception Handling" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
