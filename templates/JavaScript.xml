@@ -5,7 +5,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="testj" value="import { mount } from 'vue-test-utils';&#10;import expect from 'expect';&#10;import $NAME$ from '../../resources/assets/js/$NAME$.vue'&#10;&#10;describe('$NAME$', () =&gt; {&#10;    let wrapper;&#10;    &#10;    beforeEach(() =&gt; {&#10;        wrapper =  mount($NAME$);&#10;    });&#10;    &#10;    it('$TEST$', () =&gt; {&#10;        $END$&#10;    });&#10;});" description="A javascript test template" toReformat="false" toShortenFQNames="true">
+  <template name="testj" value="import { mount } from 'vue-test-utils';&#10;import expect from 'expect';&#10;import { see, click, type } from './setup';&#10;import $NAME$ from '../../resources/assets/js/$NAME$.vue'&#10;&#10;describe('$NAME$', () =&gt; {&#10;    let wrapper;&#10;    &#10;    beforeEach(() =&gt; {&#10;        wrapper =  mount($NAME$);&#10;    });&#10;    &#10;    it('$TEST$', () =&gt; {&#10;        $END$&#10;    });&#10;});" description="A javascript test template" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TEST" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
