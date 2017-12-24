@@ -9,4 +9,9 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="@l" value="@lang('$END$')" description="@lang() shortcut" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
