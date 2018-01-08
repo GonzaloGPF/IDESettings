@@ -14,4 +14,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="textfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! form::label('$NAME$', trans('validation.attributes.$NAME$')) !!}&#10;    {!! Form::text('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/div&gt;" description="Form group text field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
