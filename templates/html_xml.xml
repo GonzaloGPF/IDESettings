@@ -14,4 +14,11 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="vselect" value="&lt;md-field&gt;&#10;    &lt;v-select id=&quot;$NAME$_id&quot;&#10;              url=&quot;$NAME$s&quot;&#10;              name=&quot;$NAME$_id&quot;&#10;              v-model=&quot;form.$NAME$_id&quot;&#10;              :selected=&quot;form.$FORM$&quot;&#10;              :title=&quot;trans('validation.attributes.$NAME$')&quot;&#10;              @input=&quot;onInput&quot;/&gt;&#10;&lt;/md-field&gt;" description="md-field with v-select" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
