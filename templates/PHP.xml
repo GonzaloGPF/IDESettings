@@ -24,4 +24,10 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="storef" value="/**&#10; * Store a newly created resource in storage.&#10; *&#10; * @param  \Illuminate\Http\Request  $request&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function store(Request $request)&#10;{&#10;    return ApiResponse::sendResource(Response::HTTP_CREATED, $this-&gt;message('$MODEL$', 'created'), $END$);&#10;}" description="Store function boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
 </templateSet>
