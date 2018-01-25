@@ -21,4 +21,16 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="mdf" value="&lt;md-field :class=&quot;getValidationClass('$NAME$')&quot;&gt;&#10;    &lt;label v-text=&quot;trans('validation.attributes.$NAME$')&quot;&gt;&lt;/label&gt;&#10;    &lt;md-input @input=&quot;onInput&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; v-model=&quot;form.$NAME$&quot;$END$/&gt;&#10;&lt;/md-field&gt;" description="Material Design field of Vue Material" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="mdc" value="&lt;md-checkbox v-model=&quot;form.$NAME$&quot; id=&quot;$NAME$&quot; name=&quot;$NAME$&quot; @change=&quot;onInput&quot;&gt;&#10;    {{ trans('validation.attributes.$NAME$') }}&#10;&lt;/md-checkbox&gt;" description="Material Design Checkbox of Vue Material" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
