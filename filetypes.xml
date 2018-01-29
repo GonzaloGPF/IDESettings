@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="gitignore_global.txt" type="Git file" />
       <mapping ext="test" type="JavaScript" />
       <mapping ext="mwb" type="Native" />
       <mapping pattern=".env.travis" type="PLAIN_TEXT" />
