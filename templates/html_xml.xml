@@ -33,7 +33,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vinput" value="&lt;v-text name=&quot;$NAME$&quot;&#10;        v-model=&quot;form.$NAME$&quot;&#10;        :value=&quot;form.$NAME$&quot;&#10;        :errors=&quot;errors&quot;&#10;        @input=&quot;onInput&quot;/&gt;" description="Input boilderplate" toReformat="false" toShortenFQNames="true">
+  <template name="vinput" value="&lt;v-input name=&quot;$NAME$&quot;&#10;        v-model=&quot;form.$NAME$&quot;&#10;        :value=&quot;form.$NAME$&quot;&#10;        :errors=&quot;errors&quot;&#10;        @input=&quot;onInput&quot;/&gt;" description="Input boilderplate" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
