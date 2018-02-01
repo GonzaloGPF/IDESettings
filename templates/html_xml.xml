@@ -14,9 +14,9 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vselect" value="&lt;v-select name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          v-model=&quot;form.$NAME$_id&quot;&#10;          :selected=&quot;form.$FORM$&quot;&#10;          :errors=&quot;errors&quot;&#10;          @input=&quot;onInput&quot;/&gt;&#10;" description="md-field with v-select" toReformat="false" toShortenFQNames="true">
+  <template name="vselect" value="&lt;v-select :label=&quot;trans('validation.attributes.$NAME$_id')&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          v-model=&quot;form.$NAME$_id&quot;&#10;          :selected=&quot;form.$SELECTED$.id&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="md-field with v-select" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="FORM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTED" expression="camelCase($NAME$)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
@@ -33,7 +33,19 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vinput" value="&lt;v-input name=&quot;$NAME$&quot;&#10;        v-model=&quot;form.$NAME$&quot;&#10;        :value=&quot;form.$NAME$&quot;&#10;        :errors=&quot;errors&quot;&#10;        @input=&quot;onInput&quot;/&gt;" description="Input boilderplate" toReformat="false" toShortenFQNames="true">
+  <template name="elinput" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot;&gt;&#10;    &lt;el-input v-model=&quot;form.$NAME$&quot;&#10;              @input=&quot;onInput&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-input-number element" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="elnumber" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot;&gt;&#10;    &lt;el-input-number v-model=&quot;form.$NAME$&quot; controls-position=&quot;right&quot; :min=&quot;0&quot; @input=&quot;onInput&quot; step=&quot;any&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-input number element" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="elcheck" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot;&gt;&#10;    &lt;el-switch v-model=&quot;form.$NAME$&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-switch element" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
