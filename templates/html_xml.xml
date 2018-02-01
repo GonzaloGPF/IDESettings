@@ -45,7 +45,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="elcheck" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot;&gt;&#10;    &lt;el-switch v-model=&quot;form.$NAME$&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-switch element" toReformat="false" toShortenFQNames="true">
+  <template name="elcheck" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot;&gt;&#10;    &lt;el-switch v-model=&quot;form.$NAME$&quot; @input=&quot;onInput&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-switch element" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
