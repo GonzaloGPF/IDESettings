@@ -14,7 +14,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vselect" value="&lt;v-select :prop=&quot;trans('validation.attributes.$NAME$_id')&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          v-model=&quot;form.$NAME$_id&quot;&#10;          :selected=&quot;form.$SELECTED$.id&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="md-field with v-select" toReformat="false" toShortenFQNames="true">
+  <template name="vselect" value="&lt;v-select prop=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          v-model=&quot;form.$NAME$_id&quot;&#10;          :selected=&quot;form.$SELECTED$.id&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="md-field with v-select" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SELECTED" expression="camelCase($NAME$)" defaultValue="" alwaysStopAt="true" />
     <context>
