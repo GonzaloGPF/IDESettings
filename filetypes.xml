@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="gitignore_global.txt" type="Git file" />
       <mapping ext="test" type="JavaScript" />
+      <mapping ext="mp3" type="Native" />
       <mapping ext="mwb" type="Native" />
       <mapping pattern=".env.travis" type="PLAIN_TEXT" />
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
