@@ -51,7 +51,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="eldate" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot; prop=&quot;$NAME$&quot;&gt;&#10;    &lt;el-date-picker v-model=&quot;form.$NAME$&quot;&#10;                    type=&quot;date&quot;&#10;                    :placeholder=&quot;trans('validation.attributes.$NAME$')&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-date-picker element" toReformat="false" toShortenFQNames="true">
+  <template name="eldate" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot; prop=&quot;$NAME$&quot;&gt;&#10;    &lt;el-date-picker v-model=&quot;form.$NAME$&quot;&#10;                    value-format=&quot;yyyy-MM-dd&quot;&#10;                    :placeholder=&quot;trans('validation.attributes.$NAME$')&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-date-picker element" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
