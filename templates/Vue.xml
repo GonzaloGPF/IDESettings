@@ -10,4 +10,10 @@
       <option name="Vue" value="true" />
     </context>
   </template>
+  <template name="vicon" value="&lt;v-icon icon=&quot;$ICON$&quot;/&gt;" description="vIcon template" toReformat="false" toShortenFQNames="true">
+    <variable name="ICON" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
