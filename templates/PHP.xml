@@ -60,4 +60,10 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="testfd" value="/** &#10; * @test&#10; * @throws \Exception&#10; * @throws |Throwable&#10; */&#10;function it_$METHOD$()&#10;{&#10;    $END$&#10;}" description="A test function for Dusk" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
