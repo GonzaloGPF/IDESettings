@@ -5,6 +5,7 @@
       <mapping ext="test" type="JavaScript" />
       <mapping ext="mp3" type="Native" />
       <mapping ext="mwb" type="Native" />
+      <mapping pattern=".env.dusk.testing" type="PLAIN_TEXT" />
       <mapping pattern=".env.travis" type="PLAIN_TEXT" />
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
       <mapping ext="ser" type="PLAIN_TEXT" />
