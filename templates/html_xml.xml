@@ -14,7 +14,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vselect" value="&lt;v-select prop=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          v-model=&quot;form.$NAME$_id&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="md-field with v-select" toReformat="false" toShortenFQNames="true">
+  <template name="vselect" value="&lt;v-select prop=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          v-model=&quot;form.$NAME$_id&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="IU Element for a select" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SELECTED" expression="camelCase(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -52,6 +52,12 @@
     </context>
   </template>
   <template name="eldate" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot; prop=&quot;$NAME$&quot;&gt;&#10;    &lt;el-date-picker v-model=&quot;form.$NAME$&quot;&#10;                    value-format=&quot;yyyy-MM-dd&quot;&#10;                    :placeholder=&quot;trans('validation.attributes.$NAME$')&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-date-picker element" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vtext" value="&lt;v-text name=&quot;$NAME$&quot; &#10;        :value=&quot;form.$NAME$&quot; &#10;        v-model=&quot;form.$NAME$&quot;/&gt;" description="UI Element input field" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
