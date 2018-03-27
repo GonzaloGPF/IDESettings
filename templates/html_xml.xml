@@ -57,7 +57,19 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vtext" value="&lt;v-text name=&quot;$NAME$&quot; &#10;        :value=&quot;form.$NAME$&quot; &#10;        v-model=&quot;form.$NAME$&quot;/&gt;" description="UI Element input field" toReformat="false" toShortenFQNames="true">
+  <template name="vtext" value="&lt;v-text name=&quot;$NAME$&quot; &#10;        :value=&quot;form.$NAME$&quot; &#10;        v-model=&quot;form.$NAME$&quot;&#10;        @input=&quot;onInput&quot;/&gt;" description="UI Element input field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vnumber" value="&lt;v-number name=&quot;$NAME$&quot; &#10;          :value=&quot;form.$NAME$&quot; &#10;          v-model=&quot;form.$NAME$&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="UI Element number field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vswitch" value="&lt;v-switch name=&quot;$NAME$&quot; &#10;          :value=&quot;form.$NAME$&quot; &#10;          v-model=&quot;form.$NAME$&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="UI Element switch field" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
