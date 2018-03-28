@@ -24,33 +24,30 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="storef" value="/**&#10; * Store a newly created resource in storage.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function store()&#10;{&#10;    $VAR$ = $MODEL$::create(request-&gt;all());&#10;    return ApiResponse::sendResource(Response::HTTP_CREATED, $this-&gt;message('$MODEL$', 'created'), new $MODEL$Resource($VAR$));&#10;}" description="Store function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="storef" value="/**&#10; * Store a newly created resource in storage.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function store()&#10;{&#10;    $$$VAR$ = $MODEL$::create(request()-&gt;all());&#10;    return $this-&gt;storeResponse(new $MODEL$Resource($$$VAR$));&#10;}" description="Store function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="updatef" value="/**&#10; * Update the specified resource in storage.&#10; *&#10; * @param $MODEL$ $VAR$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function update($MODEL$ $VAR$)&#10;{&#10;    $VAR$-&gt;update(request()-&gt;all());&#10;&#10;    return ApiResponse::sendResource(Response::HTTP_ACCEPTED, $this-&gt;message('$MODELNAME$', 'updated'), $MODEL$Resource($VAR$));&#10;}" description="Update function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="updatef" value="/**&#10; * Update the specified resource in storage.&#10; *&#10; * @param $MODEL$ $$$VAR$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function update($MODEL$ $$$VAR$)&#10;{&#10;    $$$VAR$-&gt;update(request()-&gt;all());&#10;&#10;    return $this-&gt;updateResponse(new $MODEL$Resource($$$VAR$));&#10;}" description="Update function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="MODELNAME" expression="snakeCase(MODEL)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="deletef" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $VAR$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function destroy($MODEL$ $VAR$)&#10;{&#10;    try {&#10;        $VAR$-&gt;delete();&#10;    } catch (\Exception $e) {&#10;        return ApiResponse::sendData(Response::HTTP_UNPROCESSABLE_ENTITY, trans('session.delete_error'));&#10;    }&#10;&#10;    return ApiResponse::sendResource(Response::HTTP_ACCEPTED, $this-&gt;message('$MODELNAME$', 'deleted'), new $MODEL$Resource($VAR$));&#10;}" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="deletef" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $$$var$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function destroy($MODEL$ $$$var$)&#10;{&#10;    try {&#10;        $$$var$-&gt;delete();&#10;    } catch (\Exception $e) {&#10;        return $this-&gt;sendData(trans('session.delete_error'));&#10;    }&#10;&#10;    return $this-&gt;destroyResponse(new $MODEL$Resource($$$var$));&#10;}" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="MODELNAME" expression="snakeCase(MODEL)" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="showf" value="/**&#10; * Display the specified resource.&#10; *&#10; * @param $MODEL$ $VAR$&#10; * @return \Illuminate\Http\JsonResponse|Response&#10; */&#10;public function show($MODEL$ $VAR$)&#10;{&#10;    $VAR$ = new $MODEL$Resource($VAR$);&#10;&#10;    if (request()-&gt;wantsJson()) {&#10;        return ApiResponse::sendResource(Response::HTTP_OK, $this-&gt;message('$MODELNAME$', 'showing'), $VAR$);&#10;    }&#10;&#10;    return view('$MODELNAME$s.show', compact('$MODELNAME$'));&#10;}" description="Show function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="showf" value="/**&#10; * Display the specified resource.&#10; *&#10; * @param $MODEL$ $$$VAR$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function show($MODEL$ $$$VAR$)&#10;{&#10;    return $this-&gt;showResponse(new $MODEL$Resource($$$VAR$));&#10;}" description="Show function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="MODELNAME" expression="snakeCase(MODEL)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
@@ -64,6 +61,19 @@
     <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="indexf" value="/**&#10; * Display the specified resource.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function index()&#10;{&#10;    return $this-&gt;indexResponse($MODEL$Resource::collection($MODEL$::all()));&#10;}" description="Index function boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="indexff" value="/**&#10; * Display the specified resource.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function index($MODEL$Filters $filters)&#10;{&#10;    $models$ = $MODEL$::filter()-&gt;get();&#10;    &#10;    return $this-&gt;indexResponse($MODEL$Resource::collection($models$));&#10;}" description="Index function with filters boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="models" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
     </context>
   </template>
 </templateSet>
