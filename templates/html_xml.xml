@@ -82,9 +82,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="ibr" value="&lt;info-block-row attribute=&quot;$ATTRIBUTE$&quot;&#10;                :value=&quot;data.$VALUE$&quot;/&gt;" description="Info Block Row" toReformat="false" toShortenFQNames="true">
+  <template name="ibr" value="&lt;info-block-row :label=&quot;trans('validation.attributes.$ATTRIBUTE$')&quot;&#10;                :value=&quot;data.$ATTRIBUTE$&quot;/&gt;" description="Info Block Row" toReformat="false" toShortenFQNames="true">
     <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
