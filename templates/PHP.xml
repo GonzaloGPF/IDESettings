@@ -76,4 +76,11 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
+  <template name="apicontroller" value="&lt;?php&#10;&#10;namespace App\Http\Controllers\Api;&#10;&#10;use App\$MODEL$;&#10;use App\Filters\$MODEL$sFilter;&#10;use App\Http\Controllers\Controller;&#10;use App\Http\Resources\$MODEL$Resource;&#10;&#10;class $MODEL$sController extends Controller&#10;{&#10;    /**&#10;     * Display a listing of the resource.&#10;     *&#10;     * @param $MODEL$sFilter $filter&#10;     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response&#10;     */&#10;    public function index($MODEL$sFilter $filter)&#10;    {&#10;        $$$VAR$s = $MODEL$::filter($filter)-&gt;getOrPaginate();&#10;        &#10;        return $this-&gt;indexResponse($MODEL$Resource::collection($$$VAR$s));&#10;    }&#10;}" description="Api Controller boilarplate" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="cameCase(MODEL)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
