@@ -82,7 +82,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="ibr" value="&lt;info-block-row :label=&quot;trans('validation.attributes.$ATTRIBUTE$')&quot;&#10;                :value=&quot;data.$ATTRIBUTE$&quot;/&gt;" description="Info Block Row" toReformat="false" toShortenFQNames="true">
+  <template name="ibr" value="&lt;info-block-row :label=&quot;$t('validation.attributes.$ATTRIBUTE$')&quot;&#10;                :value=&quot;data.$ATTRIBUTE$&quot;/&gt;" description="Info Block Row" toReformat="false" toShortenFQNames="true">
     <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -90,6 +90,12 @@
   </template>
   <template name="vdate" value="&lt;v-date name=&quot;$NAME$&quot;&#10;        :value=&quot;form.$NAME$&quot;&#10;        @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="IU Element for a date" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ib" value="&lt;info-block :title=&quot;$t('labels.$ATTRIBUTE$')&quot;&gt;&#10;&#10;&lt;/info-block&gt;" description="Info Block" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
