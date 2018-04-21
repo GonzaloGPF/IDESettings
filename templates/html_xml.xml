@@ -14,9 +14,9 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vselect" value="&lt;v-select prop=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          v-model=&quot;form.$NAME$_id&quot;&#10;          :selected=&quot;form.$SELECTED$.id&quot;&#10;          @input=&quot;onInput&quot;/&gt;" description="md-field with v-select" toReformat="false" toShortenFQNames="true">
+  <template name="vselect" value="&lt;v-select name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="IU Element for a select" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTED" expression="camelCase($NAME$)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTED" expression="camelCase(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
@@ -53,6 +53,55 @@
   </template>
   <template name="eldate" value="&lt;el-form-item :label=&quot;trans('validation.attributes.$NAME$')&quot; prop=&quot;$NAME$&quot;&gt;&#10;    &lt;el-date-picker v-model=&quot;form.$NAME$&quot;&#10;                    value-format=&quot;yyyy-MM-dd&quot;&#10;                    :placeholder=&quot;trans('validation.attributes.$NAME$')&quot;/&gt;&#10;&lt;/el-form-item&gt;" description="el-date-picker element" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vtext" value="&lt;v-text name=&quot;$NAME$&quot; &#10;        :value=&quot;form.$NAME$&quot; &#10;        @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element input field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vnumber" value="&lt;v-number name=&quot;$NAME$&quot; &#10;          :value=&quot;form.$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element number field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vswitch" value="&lt;v-switch name=&quot;$NAME$&quot; &#10;          :value=&quot;form.$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element switch field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vauto" value="&lt;v-auto-complete name=&quot;$NAME$&quot;&#10;                 ref=&quot;$NAME$&quot;&#10;                 url=&quot;/$URL$&quot;&#10;                 url-attribute=&quot;$NAME$&quot;&#10;                 @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element autocomplete field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ibr" value="&lt;info-block-row :label=&quot;$t('validation.attributes.$ATTRIBUTE$')&quot;&#10;                :value=&quot;data.$ATTRIBUTE$&quot;/&gt;" description="Info Block Row" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vdate" value="&lt;v-date name=&quot;$NAME$&quot;&#10;        :value=&quot;form.$NAME$&quot;&#10;        @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="IU Element for a date" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ib" value="&lt;info-block :title=&quot;$t('labels.$ATTRIBUTE$')&quot;&gt;&#10;&#10;&lt;/info-block&gt;" description="Info Block" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="elform" value="&lt;template&gt;&#10;    &lt;el-form label-width=&quot;120px&quot; :rules=&quot;rules&quot; :model=&quot;form&quot; ref=&quot;form&quot;&gt;&#10;        $END$&#10;    &lt;/el-form&gt;&#10;&lt;/template&gt;&#10;&lt;script&gt;&#10;import FormMixin from '../../mixins/FormMixin';&#10;import rules from './rules/$RULE$Rules';&#10;&#10;export default {&#10;    components: {vText},&#10;&#10;    mixins: [FormMixin],&#10;&#10;    props: ['data'],&#10;&#10;    data() {&#10;        return {&#10;            form: Object.assign({}, this.data),&#10;            rules: this.buildRules(rules)&#10;        }&#10;    },&#10;&#10;    methods: {&#10;        validate(callback){&#10;            this.$refs['form'].validate(callback);&#10;        }&#10;    }&#10;}&#10;&lt;/script&gt;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
+    <variable name="RULE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
