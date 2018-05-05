@@ -107,4 +107,10 @@
       <option name="Vue" value="true" />
     </context>
   </template>
+  <template name="$t" value="$t('$END$')" description="Vue i18n Translate function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="Vue" value="true" />
+    </context>
+  </template>
 </templateSet>
