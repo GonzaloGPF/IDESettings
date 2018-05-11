@@ -38,7 +38,7 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="deletef" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $$$var$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function destroy($MODEL$ $$$var$)&#10;{&#10;    try {&#10;        $$$var$-&gt;delete();&#10;    } catch (\Exception $e) {&#10;        return $this-&gt;sendData(trans('session.delete_error'));&#10;    }&#10;&#10;    return $this-&gt;destroyResponse(new $MODEL$Resource($$$var$));&#10;}" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="destroyf" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $$$var$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function destroy($MODEL$ $$$var$)&#10;{&#10;    try {&#10;        $$$var$-&gt;delete();&#10;    } catch (\Exception $e) {&#10;        return $this-&gt;sendData(Response::HTTP_UNPROCESSABLE_ENTITY, trans('session.delete_error'));&#10;    }&#10;&#10;    return $this-&gt;destroyResponse(new $MODEL$Resource($$$var$));&#10;}" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -63,8 +63,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="indexf" value="/**&#10; * Display the specified resource.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function index()&#10;{&#10;    return $this-&gt;indexResponse($MODEL$Resource::collection($MODEL$::all()));&#10;}" description="Index function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="indexf" value="/**&#10; * Display the specified resource.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function index()&#10;{&#10;    return $this-&gt;indexResponse($RESOURCE$Resource::collection($MODEL$::all()));&#10;}" description="Index function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESOURCE" expression="MODEL" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
