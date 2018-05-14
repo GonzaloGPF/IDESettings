@@ -14,9 +14,9 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vselect" value="&lt;v-select name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="IU Element for a select" toReformat="false" toShortenFQNames="true">
+  <template name="vselect" value="&lt;v-select :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;&#10;          @input=&quot;onInput($event, '$NAME$_id')&quot;/&gt;" description="IU Element for a select" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTED" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTED" expression="camelCase(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
