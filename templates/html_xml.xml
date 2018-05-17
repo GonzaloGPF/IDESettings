@@ -69,7 +69,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vswitch" value="&lt;v-switch name=&quot;$NAME$&quot; &#10;          :value=&quot;form.$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element switch field" toReformat="false" toShortenFQNames="true">
+  <template name="vswitch" value="&lt;v-switch :value=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element switch field" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
