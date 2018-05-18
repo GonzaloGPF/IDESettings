@@ -25,7 +25,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="storef" value="/**&#10; * Store a newly created resource in storage.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function store()&#10;{&#10;    $$$VAR$ = $MODEL$::create(request()-&gt;all());&#10;    return $this-&gt;storeResponse(new $MODEL$Resource($$$VAR$));&#10;}" description="Store function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="storef" value="/**&#10; * Store a newly created resource in storage.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function store()&#10;{&#10;    $$$VAR$ = $MODEL$::create(request()-&gt;all());&#10;    &#10;    return $this-&gt;storeResponse(new $MODEL$Resource($$$VAR$));&#10;}" description="Store function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
     <context>
