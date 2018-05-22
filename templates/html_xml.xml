@@ -113,4 +113,10 @@
       <option name="Vue" value="true" />
     </context>
   </template>
+  <template name="cheader" value="&lt;create-header :title=&quot;$tc('models.$NAME$.$NAME$s', 2)&quot;&#10;               @onCreate=&quot;onCreate&quot;/&gt;" description="Create Header" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
