@@ -71,7 +71,7 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="indexff" value="/**&#10; * Display the specified resource.&#10; *&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function index($MODEL$Filters $filters)&#10;{&#10;    $models$ = $MODEL$::filter()-&gt;get();&#10;    &#10;    return $this-&gt;indexResponse($MODEL$Resource::collection($models$));&#10;}" description="Index function with filters boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="indexff" value="/**&#10; * Display the specified resource.&#10; *&#10; * @param $MODEL$Filter $filter&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function index($MODEL$Filter $filter)&#10;{&#10;    $$$models$s = $MODEL$::filter($filter)-&gt;getOrPaginate();&#10;    &#10;    return $this-&gt;indexResponse($MODEL$Resource::collection($$$models$s));&#10;}" description="Index function with filters boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="models" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
     <context>
