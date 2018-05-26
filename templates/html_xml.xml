@@ -57,7 +57,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vtext" value="&lt;v-text name=&quot;$NAME$&quot; &#10;        :value=&quot;form.$NAME$&quot; &#10;        @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element input field" toReformat="false" toShortenFQNames="true">
+  <template name="vtext" value="&lt;v-text :value=&quot;form.$NAME$&quot; &#10;        name=&quot;$NAME$&quot; &#10;        @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element input field" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -69,7 +69,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vswitch" value="&lt;v-switch name=&quot;$NAME$&quot; &#10;          :value=&quot;form.$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element switch field" toReformat="false" toShortenFQNames="true">
+  <template name="vswitch" value="&lt;v-switch :value=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element switch field" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -111,6 +111,18 @@
     <context>
       <option name="HTML" value="true" />
       <option name="Vue" value="true" />
+    </context>
+  </template>
+  <template name="cheader" value="&lt;create-header :title=&quot;$tc('models.$NAME$.$NAME$s', 2)&quot;&#10;               @onCreate=&quot;onCreate&quot;/&gt;" description="Create Header" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="eheader" value="&lt;edit-header :title=&quot;$tc('models.$NAME$.$NAME$s', 2)&quot;&#10;             @onEdit=&quot;update&quot;/&gt;" description="Create Header" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
     </context>
   </template>
 </templateSet>

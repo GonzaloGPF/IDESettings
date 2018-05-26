@@ -50,11 +50,4 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="indexf" value="/**&#10; * Display a listing of the resource.&#10; * &#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function index()&#10;{&#10;    return ApiResponse::sendResource(200, $this-&gt;message('$TRANS$', 'index'), $MODEL$Resource::collection($MODEL$::all()));&#10;}" description="Controller's index function" toReformat="false" toShortenFQNames="true">
-    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="TRANS" expression="snakeCase($MODEL$)" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
 </templateSet>
