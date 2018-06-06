@@ -85,4 +85,13 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="testff" value="/** @test */&#10;function it_can_fetch_$MODELNAME$s_by_$ATTRIBUTE$()&#10;{&#10;    $$$MODELNAME$ = create($MODEL$::class, ['$ATTRIBUTE$' =&gt; $VALUE$]);&#10;&#10;    $data = $this-&gt;makeRequest(['$ATTRIBUTE$' =&gt; $$$MODELNAME$-&gt;$ATTRIBUTE$]);&#10;    $this-&gt;assertCount(1, $data);&#10;}" description="A test function of filters" toReformat="false" toShortenFQNames="true">
+    <variable name="MODELNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL" expression="capitalize(MODELNAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="test" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
