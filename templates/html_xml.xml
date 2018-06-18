@@ -75,14 +75,14 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vauto" value="&lt;v-auto-complete name=&quot;$NAME$&quot;&#10;                 ref=&quot;$NAME$&quot;&#10;                 url=&quot;/$URL$&quot;&#10;                 url-attribute=&quot;$NAME$&quot;&#10;                 @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element autocomplete field" toReformat="false" toShortenFQNames="true">
+  <template name="vauto" value="&lt;v-auto-complete name=&quot;$NAME$&quot;&#10;                 ref=&quot;$NAME$&quot;&#10;                 url=&quot;$URL$&quot;&#10;                 url-attribute=&quot;$NAME$&quot;&#10;                 @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element autocomplete field" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="ibr" value="&lt;info-block-row :label=&quot;$t('validation.attributes.$ATTRIBUTE$')&quot;&#10;                :value=&quot;data.$ATTRIBUTE$&quot;/&gt;" description="Info Block Row" toReformat="false" toShortenFQNames="true">
+  <template name="ibi" value="&lt;info-block-item :label=&quot;$t('validation.attributes.$ATTRIBUTE$')&quot;&#10;                 :value=&quot;data.$ATTRIBUTE$&quot;/&gt;" description="Info Block Item" toReformat="false" toShortenFQNames="true">
     <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
