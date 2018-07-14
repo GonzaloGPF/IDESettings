@@ -14,7 +14,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vselect" value="&lt;v-select :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;         &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="IU Element for a select" toReformat="false" toShortenFQNames="true">
+  <template name="iselect" value="&lt;i-select v-model=&quot;form.$NAME$&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;/&gt;" description="Input for Select" toReformat="false" toShortenFQNames="true">
     <variable name="SELECTED" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -57,25 +57,25 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vtext" value="&lt;v-text :value=&quot;form.$NAME$&quot; &#10;        name=&quot;$NAME$&quot; &#10;        @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element input field" toReformat="false" toShortenFQNames="true">
+  <template name="itext" value="&lt;i-text v-model=&quot;form.$NAME$&quot; &#10;        name=&quot;$NAME$&quot;/&gt;" description="Input for Text" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vnumber" value="&lt;v-number name=&quot;$NAME$&quot; &#10;          :value=&quot;form.$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element number field" toReformat="false" toShortenFQNames="true">
+  <template name="inumber" value="&lt;v-number v-model=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot;/&gt;" description="Input for Number" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vswitch" value="&lt;v-switch :value=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot; &#10;          @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element switch field" toReformat="false" toShortenFQNames="true">
+  <template name="iswitch" value="&lt;i-switch v-model=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot;/&gt;" description="Input for Boolean" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vauto" value="&lt;v-auto-complete name=&quot;$NAME$&quot;&#10;                 ref=&quot;$NAME$&quot;&#10;                 url=&quot;$URL$&quot;&#10;                 url-attribute=&quot;$NAME$&quot;&#10;                 @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="UI Element autocomplete field" toReformat="false" toShortenFQNames="true">
+  <template name="iauto" value="&lt;i-auto-complete name=&quot;$NAME$&quot;&#10;                 ref=&quot;$NAME$&quot;&#10;                 url=&quot;$URL$&quot;&#10;                 url-attribute=&quot;$NAME$&quot;&#10;                 @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="Input for autocemplete" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -88,7 +88,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vdate" value="&lt;v-date name=&quot;$NAME$&quot;&#10;        :value=&quot;form.$NAME$&quot;&#10;        @input=&quot;onInput($event, '$NAME$')&quot;/&gt;" description="IU Element for a date" toReformat="false" toShortenFQNames="true">
+  <template name="idate" value="&lt;i-date v-model=&quot;form.$NAME$&quot;&#10;        name=&quot;$NAME$&quot;/&gt;" description="Input for Date" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
