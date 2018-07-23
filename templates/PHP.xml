@@ -17,9 +17,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="filterclass" value="&lt;?php&#10;&#10;namespace App\Filters;&#10;&#10;use Illuminate\Database\Eloquent\Builder;&#10;&#10;class $NAME$ extends Filter&#10;{&#10;    /**&#10;     * @var array. Applicable filters by request's query strings. Every filter will be use by Filter class.&#10;     * Filter class will look for a method with the same name of the filter.&#10;     */&#10;    protected $filters = ['$ATTRIBUTE$'];&#10;&#10;    /**&#10;     * @param $$$ATTRIBUTE$&#10;     * @return Builder&#10;     */&#10;    protected function $METHOD$($$$ATTRIBUTE$)&#10;    {&#10;        return $this-&gt;builder-&gt;where('$ATTRIBUTE$', $$$ATTRIBUTE$);&#10;    }&#10;}" description="Boilderplate for a Filter class creation" toReformat="false" toShortenFQNames="true">
+  <template name="filterclass" value="&lt;?php&#10;&#10;namespace App\Filters;&#10;&#10;use Illuminate\Database\Eloquent\Builder;&#10;&#10;class $NAME$ extends Filter&#10;{&#10;    /**&#10;     * @var array. Applicable filters by request's query strings. Every filter will be use by Filter class.&#10;     * Filter class will look for a method with the same name of the filter.&#10;     */&#10;    protected $filters = ['$ATTRIBUTE$'];&#10;&#10;    /**&#10;     * @param $$$VARIABLE$&#10;     * @return Builder&#10;     */&#10;    protected function $METHOD$($$$VARIABLE$)&#10;    {&#10;        return $this-&gt;builder-&gt;where('$ATTRIBUTE$', $$$VARIABLE$);&#10;    }&#10;}" description="Boilderplate for a Filter class creation" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="camelCase(ATTRIBUTE)" defaultValue="" alwaysStopAt="true" />
     <variable name="METHOD" expression="camelCase(ATTRIBUTE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />
@@ -39,9 +40,9 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="destroyf" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $$$var$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function destroy($MODEL$ $$$var$)&#10;{&#10;    try {&#10;        $$$var$-&gt;delete();&#10;    } catch (\Exception $e) {&#10;        return $this-&gt;sendData(Response::HTTP_UNPROCESSABLE_ENTITY, trans('session.delete_error'));&#10;    }&#10;&#10;    return $this-&gt;destroyResponse(new $MODEL$Resource($$$var$));&#10;}" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="destroyf" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $$$var$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function destroy($MODEL$ $$$var$)&#10;{&#10;    return $this-&gt;destroyResponse($var$, new $MODEL$Resource($$$var$));&#10;}&#10;&#10;" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
