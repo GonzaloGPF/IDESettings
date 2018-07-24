@@ -14,9 +14,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iselect" value="&lt;i-select v-model=&quot;form.$NAME$&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;/&gt;" description="Input for Select" toReformat="false" toShortenFQNames="true">
+  <template name="iselect" value="&lt;i-select v-model=&quot;form.$NAME$&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          name=&quot;$NAME$&quot;&#10;          url=&quot;$URL$s&quot;/&gt;" description="Input for Select" toReformat="false" toShortenFQNames="true">
     <variable name="SELECTED" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
