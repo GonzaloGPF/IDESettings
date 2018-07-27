@@ -64,7 +64,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="inumber" value="&lt;v-number v-model=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot;/&gt;" description="Input for Number" toReformat="false" toShortenFQNames="true">
+  <template name="inumber" value="&lt;i-number v-model=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot;/&gt;" description="Input for Number" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
