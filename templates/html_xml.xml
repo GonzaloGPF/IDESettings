@@ -14,9 +14,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iselect" value="&lt;i-select v-model=&quot;form.$NAME$&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          name=&quot;$NAME$_id&quot;&#10;          url=&quot;$NAME$s&quot;/&gt;" description="Input for Select" toReformat="false" toShortenFQNames="true">
+  <template name="iselect" value="&lt;i-select v-model=&quot;form.$NAME$&quot;&#10;          :selected=&quot;form.$SELECTED$ ? form.$SELECTED$.id : null&quot;&#10;          name=&quot;$NAME$&quot;&#10;          url=&quot;$URL$s&quot;/&gt;" description="Input for Select" toReformat="false" toShortenFQNames="true">
     <variable name="SELECTED" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
@@ -63,7 +64,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="inumber" value="&lt;v-number v-model=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot;/&gt;" description="Input for Number" toReformat="false" toShortenFQNames="true">
+  <template name="inumber" value="&lt;i-number v-model=&quot;form.$NAME$&quot; &#10;          name=&quot;$NAME$&quot;/&gt;" description="Input for Number" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -100,7 +101,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="elform" value="&lt;template&gt;&#10;    &lt;el-form ref=&quot;form&quot; :rules=&quot;rules&quot; :model=&quot;form&quot; label-width=&quot;120px&quot;&gt;&#10;        $END$&#10;    &lt;/el-form&gt;&#10;&lt;/template&gt;&#10;&lt;script&gt;&#10;import FormMixin from '../../mixins/FormMixin';&#10;import rules from './rules/$RULE$Rules';&#10;import vText from './inputs/vText';&#10;&#10;export default {&#10;    components: {vText},&#10;&#10;    mixins: [FormMixin],&#10;&#10;    props: ['data'],&#10;&#10;    data() {&#10;        return {&#10;            form: Object.assign({}, this.data),&#10;            rules: this.buildRules(rules)&#10;        }&#10;    },&#10;&#10;    methods: {&#10;        validate(callback){&#10;            this.$refs['form'].validate(callback);&#10;        }&#10;    }&#10;}&#10;&lt;/script&gt;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
+  <template name="formlayout" value="&lt;template&gt;&#10;    &lt;el-form ref=&quot;form&quot; :rules=&quot;rules&quot; :model=&quot;form&quot; label-width=&quot;120px&quot;&gt;&#10;        $END$&#10;    &lt;/el-form&gt;&#10;&lt;/template&gt;&#10;&lt;script&gt;&#10;import FormMixin from '../../mixins/FormMixin';&#10;import rules from './rules/$RULE$Rules';&#10;import iText from './inputs/iText';&#10;&#10;export default {&#10;    components: {iText},&#10;&#10;    mixins: [FormMixin],&#10;&#10;    props: ['data'],&#10;&#10;    data() {&#10;        return {&#10;            form: Object.assign({}, this.data),&#10;            rules: this.buildRules(rules)&#10;        }&#10;    },&#10;&#10;    methods: {&#10;        validate(callback){&#10;            this.$refs['form'].validate(callback);&#10;        }&#10;    }&#10;}&#10;&lt;/script&gt;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
     <variable name="RULE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -123,6 +124,12 @@
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vform" value="&lt;el-form ref=&quot;form&quot; :rules=&quot;rules&quot; :model=&quot;form&quot; label-width=&quot;120px&quot;&gt;&#10;    $END$&#10;&lt;/el-form&gt;&#10;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="Vue" value="true" />
     </context>
   </template>
 </templateSet>
