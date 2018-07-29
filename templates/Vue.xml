@@ -1,0 +1,19 @@
+<templateSet group="Vue">
+  <template name="vlayout" value="&lt;template&gt;&#10;    &lt;div&gt;&#10;        $TEMPLATE$&#10;    &lt;/div&gt;&#10;&lt;/template&gt;&#10;&lt;script&gt;&#10;export default {&#10;    props: ['$PROP$'],&#10;    data(){&#10;        return {&#10;            $END$&#10;        }&#10;    }&#10;}&#10;&lt;/script&gt;" description="Initial template for .vue" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="VUE_COMPONENT_DESCRIPTOR" value="false" />
+      <option name="VUE_INSIDE_TAG" value="false" />
+      <option name="VUE_SCRIPT" value="false" />
+      <option name="VUE_TEMPLATE" value="false" />
+      <option name="Vue" value="true" />
+    </context>
+  </template>
+  <template name="vicon" value="&lt;v-icon icon=&quot;$ICON$&quot;/&gt;" description="vIcon template" toReformat="false" toShortenFQNames="true">
+    <variable name="ICON" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
