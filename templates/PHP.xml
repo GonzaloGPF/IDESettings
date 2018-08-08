@@ -17,7 +17,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="filterclass" value="&lt;?php&#10;&#10;namespace App\Filters;&#10;&#10;use Illuminate\Database\Eloquent\Builder;&#10;&#10;class $NAME$ extends Filter&#10;{&#10;    /**&#10;     * @var array. Applicable filters by request's query strings. Every filter will be use by Filter class.&#10;     * Filter class will look for a method with the same name of the filter.&#10;     */&#10;    protected $filters = ['$ATTRIBUTE$'];&#10;&#10;    /**&#10;     * @param $$$VARIABLE$&#10;     * @return Builder&#10;     */&#10;    protected function $METHOD$($$$VARIABLE$)&#10;    {&#10;        return $this-&gt;builder-&gt;where('$ATTRIBUTE$', $$$VARIABLE$);&#10;    }&#10;}" description="Boilderplate for a Filter class creation" toReformat="false" toShortenFQNames="true">
+  <template name="filterclass" value="&lt;?php&#10;&#10;namespace App\Filters;&#10;&#10;use Illuminate\Database\Eloquent\Builder;&#10;&#10;class $NAME$ extends Filter&#10;{&#10;    /**&#10;     * @var array.&#10;     */&#10;    protected $filters = ['$ATTRIBUTE$'];&#10;&#10;    /**&#10;     * @param $$$VARIABLE$&#10;     * @return Builder&#10;     */&#10;    protected function $METHOD$($$$VARIABLE$)&#10;    {&#10;        return $this-&gt;builder-&gt;where('$ATTRIBUTE$', $$$VARIABLE$);&#10;    }&#10;}" description="Boilderplate for a Filter class creation" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VARIABLE" expression="camelCase(ATTRIBUTE)" defaultValue="" alwaysStopAt="true" />
