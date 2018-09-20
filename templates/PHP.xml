@@ -103,4 +103,13 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="filtertest" value="&lt;?php&#10;&#10;namespace Tests\Feature;&#10;&#10;use Illuminate\Foundation\Testing\RefreshDatabase;&#10;use Illuminate\Foundation\Testing\WithoutMiddleware;&#10;use Tests\TestCase;&#10;&#10;class $MODEL$FilterTest extends TestCase&#10;{&#10;    use RefreshDatabase, WithoutMiddleware;&#10;&#10;    protected function setUp()&#10;    {&#10;        parent::setUp();&#10;        create($MODEL$::class, [], 2); // extra $MODEL$&#10;    }&#10;&#10;    /** @test */&#10;    function it_can_fetch_$ROUTE$_by_$ATTRIBUTE$()&#10;    {&#10;        $responseData = $this-&gt;makeRequest(['$ATTRIBUTE$' =&gt; $VALUE$]);&#10;&#10;        $this-&gt;assertCount(3, $responseData);&#10;    }&#10;&#10;    private function makeRequest($parameters = [])&#10;    {&#10;        return $this-&gt;get(route('$ROUTE$.index', $parameters))&#10;            -&gt;assertSuccessful()&#10;            -&gt;json()['data'];&#10;    }&#10;}" description="Boilderplate for a Filter Test class creation" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
