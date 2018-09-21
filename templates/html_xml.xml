@@ -132,4 +132,11 @@
       <option name="Vue" value="true" />
     </context>
   </template>
+  <template name="col" value="&lt;el-col :xs=&quot;$XS$&quot; :sm=&quot;$XS$&quot; :md=&quot;$MD$&quot;&gt;&#10;    $END$&#10;&lt;/el-col&gt;" description="Generating a Element Column" toReformat="false" toShortenFQNames="true">
+    <variable name="XS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
