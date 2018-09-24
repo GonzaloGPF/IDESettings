@@ -6,6 +6,12 @@
   <action id="FindPrevious">
     <keyboard-shortcut first-keystroke="shift f3" />
   </action>
+  <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="alt n" />
+  </action>
+  <action id="PrevSplitter">
+    <keyboard-shortcut first-keystroke="alt p" />
+  </action>
   <action id="ShelveChanges.UnshelveWithDialog" />
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="alt windows" />
