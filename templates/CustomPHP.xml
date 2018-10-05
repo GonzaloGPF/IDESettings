@@ -6,7 +6,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="destroyf" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $$$var$&#10; * @return \Illuminate\Http\JsonResponse&#10; */&#10;public function destroy($MODEL$ $$$var$)&#10;{&#10;    $this-&gt;destroyModel($$$var$);&#10;    &#10;    return $this-&gt;destroyResponse();&#10;}&#10;&#10;" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="destroyf" value="/**&#10; * Remove the specified resource from storage.&#10; *&#10; * @param $MODEL$ $$$var$&#10; * @return \Illuminate\Http\JsonResponse&#10; * @throws \App\Exceptions\CouldNotDeleteException&#10; */&#10;public function destroy($MODEL$ $$$var$)&#10;{&#10;    $this-&gt;destroyModel($$$var$);&#10;    &#10;    return $this-&gt;destroyResponse();&#10;}&#10;&#10;" description="Delete function boilerplate" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
     <context>
