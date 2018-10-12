@@ -112,4 +112,11 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="setupf" value="/**&#10; * @var $MODEL$&#10; */&#10;private $$$var$;&#10;&#10;protected function setUp()&#10;{&#10;    parent::setUp();&#10;    $this-&gt;$var$ = create($MODEL$::class);&#10;}" description="Setup function boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="camelCase(MODEL)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
 </templateSet>
