@@ -87,4 +87,11 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="bibi" value="@component('components.InfoBlockItem', ['attribute' =&gt; '$ATTRIBUTE$'])&#10;    {{ $VALUE$ }}&#10;@endComponent" description="Blade Info Block Item" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
