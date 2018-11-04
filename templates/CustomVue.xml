@@ -16,4 +16,12 @@
       <option name="Vue" value="true" />
     </context>
   </template>
+  <template name="vmodal" value="&lt;v-modal :show=&quot;showModal&quot;&#10;         :title=&quot;$TITLE$&quot;&#10;         @close=&quot;showModal = false&quot;&#10;         @submit=&quot;$SUBMIT$&quot;&gt;&#10;    $CONTENT$&#10;&lt;/v-modal&gt;" description="vModal template" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBMIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
