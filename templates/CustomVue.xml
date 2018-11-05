@@ -24,4 +24,14 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="vrow" value="&lt;v-row&gt;&#10;    $END$      &#10;&lt;/v-row&gt;" description="vRow template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vcol" value="&lt;v-col&gt;&#10;    $END$      &#10;&lt;/v-col&gt;" description="vCol template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
