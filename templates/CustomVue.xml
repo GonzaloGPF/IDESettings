@@ -34,8 +34,9 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vbutton" value="&lt;v-button :title=&quot;$TITLE$&quot;&#10;          @click=&quot;$ACTION$&quot;/&gt;" description="vButton template" toReformat="false" toShortenFQNames="true">
-    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="vbutton" value="&lt;v-button :title=&quot;$t('controls.$CONTROL$')&quot;&#10;          icon=&quot;$ICON$&quot;&#10;          @click=&quot;$ACTION$&quot;/&gt;" description="vButton template" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ICON" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
