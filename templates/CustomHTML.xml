@@ -65,7 +65,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iauto" value="&lt;i-auto-complete v-model=&quot;$NAME$&quot;&#10;                 name=&quot;$NAME$&quot;&#10;                 url=&quot;$URL$&quot;&#10;                 url-attribute=&quot;$ATTR$&quot;/&gt;" description="Input for autocemplete" toReformat="false" toShortenFQNames="true">
+  <template name="iauto" value="&lt;i-auto-complete v-model=&quot;form.$NAME$&quot;&#10;                 name=&quot;$NAME$&quot;&#10;                 url=&quot;$URL$&quot;&#10;                 url-attribute=&quot;$ATTR$&quot;/&gt;" description="Input for autocemplete" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ATTR" expression="" defaultValue="" alwaysStopAt="true" />
