@@ -94,4 +94,16 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="imoney" value="&lt;i-money v-model=&quot;form.$NAME$&quot;&#10;         name=&quot;$NAME$&quot;/&gt;" description="Input for Money" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="i-text-area" value="&lt;i-text-area v-model=&quot;form.$NAME$&quot;&#10;             name=&quot;$NAME$&quot;/&gt;" description="Input for Text Areas" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
