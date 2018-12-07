@@ -73,7 +73,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="formlayout" value="&lt;template&gt;&#10;    &lt;el-form ref=&quot;form&quot; :rules=&quot;rules&quot; :model=&quot;form&quot; label-width=&quot;120px&quot; label-position=&quot;top&quot;&gt;&#10;        $END$&#10;    &lt;/el-form&gt;&#10;&lt;/template&gt;&#10;&lt;script&gt;&#10;import FormMixin from '../../mixins/FormMixin';&#10;import rules from './rules/$RULE$Rules';&#10;import iText from './inputs/iText';&#10;&#10;export default {&#10;    components: {iText},&#10;&#10;    mixins: [FormMixin],&#10;&#10;    props: ['data'],&#10;&#10;    data() {&#10;        return {&#10;            form: Object.assign({}, this.data),&#10;            rules: this.buildRules(rules)&#10;        }&#10;    },&#10;&#10;    methods: {&#10;        validate(callback){&#10;            this.$refs['form'].validate(callback);&#10;        }&#10;    }&#10;}&#10;&lt;/script&gt;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
+  <template name="formlayout" value="&lt;template&gt;&#10;    &lt;el-form ref=&quot;form&quot; :rules=&quot;rules&quot; :model=&quot;form&quot; label-width=&quot;120px&quot; label-position=&quot;top&quot;&gt;&#10;        $END$&#10;    &lt;/el-form&gt;&#10;&lt;/template&gt;&#10;&lt;script&gt;&#10;import FormMixin from '../../mixins/FormMixin';&#10;import rules from './rules/$RULE$Rules';&#10;&#10;export default {&#10;    mixins: [FormMixin],&#10;&#10;    props: ['data'],&#10;&#10;    data() {&#10;        return {&#10;            form: Object.assign({}, this.data),&#10;            rules: this.buildRules(rules)&#10;        }&#10;    },&#10;&#10;    methods: {&#10;        validate(callback){&#10;            this.$refs['form'].validate(callback);&#10;        }&#10;    }&#10;}&#10;&lt;/script&gt;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
     <variable name="RULE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -100,7 +100,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="i-text-area" value="&lt;i-text-area v-model=&quot;form.$NAME$&quot;&#10;             name=&quot;$NAME$&quot;/&gt;" description="Input for Text Areas" toReformat="false" toShortenFQNames="true">
+  <template name="iarea" value="&lt;i-text-area v-model=&quot;form.$NAME$&quot;&#10;             name=&quot;$NAME$&quot;/&gt;" description="Input for Text Areas" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
