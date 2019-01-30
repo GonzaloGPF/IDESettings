@@ -42,10 +42,4 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="vform" value="&lt;el-form ref=&quot;form&quot; :rules=&quot;$RULES$&quot; :model=&quot;form&quot; label-width=&quot;140px&quot; size=&quot;mini&quot;&gt;&#10;    $END$&#10;&lt;/el-form&gt;" description="vForm template" toReformat="false" toShortenFQNames="true">
-    <variable name="RULES" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
 </templateSet>

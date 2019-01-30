@@ -1,5 +1,5 @@
 <templateSet group="CustomHTML">
-  <template name="vform" value="&lt;v-form ref=&quot;form&quot; :rules=&quot;rules&quot; :model=&quot;form&quot; label-width=&quot;120px&quot;&gt;&#10;    $END$&#10;&lt;/v-form&gt;&#10;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
+  <template name="vform" value="&lt;v-form ref=&quot;form&quot; :rules=&quot;rules&quot; :model=&quot;form&quot;&gt;&#10;    $END$&#10;&lt;/v-form&gt;&#10;" description="El form boilderplate" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="Vue" value="true" />
