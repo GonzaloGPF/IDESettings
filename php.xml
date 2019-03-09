@@ -89,7 +89,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <phpunit_by_interpreter interpreter_id="4cd36bd6-a71d-45cb-8da2-08e1e4ca9ec8" load_method="CUSTOM_LOADER" bootstrap_file_path="/home/vagrant/code/BeatBattles/bootstrap/app.php" configuration_file_path="/home/vagrant/code/BeatBattles/phpunit.xml" custom_loader_path="/home/vagrant/code/BeatBattles/vendor/autoload.php" phpunit_phar_path="" use_bootstrap_file="true" use_configuration_file="true" />
+      <phpunit_by_interpreter interpreter_id="4cd36bd6-a71d-45cb-8da2-08e1e4ca9ec8" load_method="CUSTOM_LOADER" bootstrap_file_path="/home/vagrant/code/Gladiator/bootstrap/app.php" configuration_file_path="/home/vagrant/code/Gladiator/phpunit.xml" custom_loader_path="/home/vagrant/code/Gladiator/vendor/autoload.php" phpunit_phar_path="" use_bootstrap_file="true" use_configuration_file="true" />
     </phpunit_settings>
   </component>
 </application>
