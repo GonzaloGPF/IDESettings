@@ -29,6 +29,9 @@
   <action id="UnsplitAll">
     <keyboard-shortcut first-keystroke="alt u" />
   </action>
+  <action id="VagrantGroup">
+    <keyboard-shortcut first-keystroke="alt v" />
+  </action>
   <action id="com.jetbrains.plugins.remotesdk.console.RunSshConsoleAction">
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
