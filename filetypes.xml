@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping ext="mwb" type="Native" />
       <mapping pattern=".php_cs" type="PHP" />
+      <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping ext="config" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
