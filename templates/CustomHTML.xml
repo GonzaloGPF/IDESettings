@@ -112,4 +112,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="fs" value="&lt;fieldset&gt;&#10;    &lt;legend v-text=&quot;modelTitle('$MODEL$')&quot;/&gt;&#10;    $END$&#10;&lt;/fieldset&gt;" description="Fieldset boilderplate" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Vue" value="true" />
+    </context>
+  </template>
 </templateSet>
