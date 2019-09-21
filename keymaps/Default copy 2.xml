@@ -1,4 +1,6 @@
 <keymap version="1" name="Default copy 2" parent="$default">
+  <action id="ChangesView.UnshelveSilently" />
+  <action id="Console.TableResult.SetNull" />
   <action id="EditorCloneCaretBelow">
     <keyboard-shortcut first-keystroke="alt c" />
   </action>
@@ -7,15 +9,20 @@
     <keyboard-shortcut first-keystroke="shift ctrl n" />
     <keyboard-shortcut first-keystroke="ctrl p" />
   </action>
+  <action id="Inline" />
+  <action id="IntroduceVariable" />
   <action id="NextSplitter">
     <keyboard-shortcut first-keystroke="alt n" />
+    <keyboard-shortcut first-keystroke="ctrl alt n" />
   </action>
   <action id="ParameterInfo" />
+  <action id="ShowUmlDiagramPopup" />
   <action id="SplitVertically">
-    <keyboard-shortcut first-keystroke="alt windows" />
+    <keyboard-shortcut first-keystroke="ctrl alt v" />
   </action>
   <action id="UnsplitAll">
     <keyboard-shortcut first-keystroke="alt u" />
+    <keyboard-shortcut first-keystroke="ctrl alt u" />
   </action>
   <action id="com.jetbrains.plugins.remotesdk.console.RunSshConsoleAction">
     <keyboard-shortcut first-keystroke="alt s" />
