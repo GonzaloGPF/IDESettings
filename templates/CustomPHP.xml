@@ -119,4 +119,10 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
+  <template name="scopec" value="&lt;?php&#10;&#10;namespace App\Scopes;&#10;&#10;use Illuminate\Database\Eloquent\Builder;&#10;use Illuminate\Database\Eloquent\Model;&#10;use Illuminate\Database\Eloquent\Scope;&#10;&#10;class $MODEL$Scope implements Scope&#10;{&#10;    /**&#10;     * Apply the scope to a given Eloquent query builder.&#10;     *&#10;     * @param Builder $builder&#10;     * @param Model $model&#10;     * @return void&#10;     */&#10;    public function apply(Builder $builder, Model $model)&#10;    {&#10;        $END$&#10;    }&#10;}" description="Scope Class" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
