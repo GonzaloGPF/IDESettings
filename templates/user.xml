@@ -55,4 +55,18 @@
       <option name="Vue" value="true" />
     </context>
   </template>
+  <template name="ptable" value="$table-&gt;foreignId('$TABLE_A$_id')-&gt;constrained()-&gt;onDelete('cascade');&#10;$table-&gt;foreignId('$TABLE_B$_id')-&gt;constrained()-&gt;onDelete('cascade');&#10;$table-&gt;timestamps();&#10;&#10;$table-&gt;primary(['$TABLE_A$_id', '$TABLE_B$_id']);" description="Pivot Table" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE_A" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE_B" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="foreign" value="$table-&gt;foreign('$COLUMN$_id')-&gt;references('id')-&gt;on('$TABLE$');" description="Foreign id migration" toReformat="false" toShortenFQNames="true">
+    <variable name="COLUMN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
